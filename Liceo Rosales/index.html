@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liceo Rosales</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Archivos CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link href="VI L_ Sa Regular.ttf">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Quicksand', sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+          /* Estilos para la sección del encabezado */
+        
+        header {
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(15, 10, 58, 0.7), rgba(30, 4, 30, 0.7)), url(bglandingpage.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        nav {
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            color: #ff0000;
+            font-size: 24px;
+            font-family: 'VIREGULAR';
+            transition-duration: 0.5s;
+            font-size: 29px;
+        }
+
+        .nav-links{
+            color: #a00000;
+            transition-duration: 0.5s;
+        }
+
+        .nav-links ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links ul li {
+            margin-right: 20px;
+        }
+
+        .nav-links ul li:last-child {
+            margin-right: 0;
+        }
+
+        .nav-links ul li a {
+            text-decoration: none;
+            color: #adadad;
+            font-size: 16px;
+        }
+
+
+            /* Estilos para los enlaces de navegación */
+
+        .nav-links ul li a::before {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background: #ff1100;
+            display: block;
+            margin: auto;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .nav-links ul li a:hover::before {
+            transform: scaleX(1);
+        }
+
+        /* Estilos para el botón "Descubre Más" */
+
+        .btn-light {
+            background-color: #fff;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        /* Estilos adicionales según tus necesidades */
+        
+        /*Estilo de Somos Rosalistas */
+        
+        @font-face {
+            font-family: 'VIREGULAR';
+            src: url(VI\ L_\ Sa\ Regular.ttf);
+        }
+        .display-4{
+            font-family: 'VIREGULAR' ;
+        }
+
+        /* Añade tus estilos personalizados aquí */
+
+        /* Estilo para las imágenes con desenfoque y tamaño fijo */
+        
+        .card-img-top {
+    width: 400px; /* Ancho fijo para todas las imágenes */
+    height: 400px; /* Altura automática para mantener la proporción original */
+    object-fit: cover;
+    filter: blur(2px); /* Efecto de desenfoque */
+    transition: filter 0.3s; /* Transición suave para el efecto de desenfoque */
+}
+
+    /* Estilo para quitar el desenfoque al pasar el mouse */
+    .card:hover .card-img-top {
+    filter: blur(0); /* Elimina el desenfoque al hacer hover en la tarjeta */
+}
+
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación Bootstrap (pegajosa) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Liceo Rosales</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto nav-links">
+                    <li class="nav-item">
+                        <a class="nav-link" href="quienessomos.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="niveles.html">Niveles Academicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Espacio para la barra de navegación pegajosa -->
+    <div style="height: 70px;"></div>
+
+    <!-- Encabezado de la Página -->
+    <header>
+        <div class="container">
+            <h1 class="display-4">Somos Rosalistas</h1>
+            <p class="lead">Enseñando Ciencia, Cultura, Trabajo</p>
+            <a href="#" class="btn btn-light btn-lg">Descubre Más</a>
+        </div>
+    </header>
+
+    <!-- Sección de Contenido Destacado -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                
+                <section class="py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card mb-4">
+                                    <img src="bachiller.jpg" class="card-img-top" alt="Imagen 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nivel de Preprimaria</h5>
+                                        <p class="card-text">Descripción del servicio 1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card mb-4">
+                                    <img src="magisterio2.jpg" class="card-img-top" alt="Imagen 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Niveles de Primaria</h5>
+                                        <p class="card-text">Descripción del servicio 2.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card mb-4">
+                                    <img src="basicos.png" class="card-img-top" alt="Imagen 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Niveles de Basicos</h5>
+                                        <p class="card-text">Descripción del servicio 3.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <p class="text-center">&copy; 2023 Liceo Rosales</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
